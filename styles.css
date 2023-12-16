@@ -1,0 +1,107 @@
+body {
+    background: url(https://wallpapercave.com/wp/S2YKylX.jpg) center/cover fixed;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: rgba(41, 41, 41, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+#buttonContainer {
+    margin-bottom: 20px;
+}
+
+#buttonContainer button {
+    background-color: #042c44;
+    border: 1px solid #042c44;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 3px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#buttonContainer button:hover {
+    opacity: 1;
+}
+
+#cityInput {
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.664);
+    color: #000000;
+    backdrop-filter: blur(10px);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#searchButton,
+#startButton,
+#stopButton,
+#resetButton {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 3px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#searchButton:hover,
+#startButton:hover,
+#stopButton:hover,
+#resetButton:hover {
+    opacity: 1;
+}
+
+#result,
+#cronometroResultado {
+    margin-top: 20px;
+    font-size: 24px;
+    position: relative;
+    color: #ffffff;
+}
+
+#mirror {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(41, 41, 41, 1), rgba(41, 41, 41, 0));
+}

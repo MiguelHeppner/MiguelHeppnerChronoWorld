@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Horario y Cronometro</title>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Horario</h1>
+        <input type="text" id="cityInput" placeholder="Ingrese la ciudad">
+        <button id="searchButton" onclick="obtenerHoraCiudad()">Consultar Horario</button>
+        <div id="result"></div>
+        
+        <h1>Cronometro</h1>
+        <button id="startButton" onclick="iniciarCronometro()">Iniciar Cronometro</button>
+        <button id="stopButton" onclick="detenerCronometro()">Detener Cronometro</button>
+        <button id="resetButton" onclick="borrarCronometro()">Borrar Tiempo</button>
+        <div id="cronometroResultado">Tiempo: 00:00:00</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
